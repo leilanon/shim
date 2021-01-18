@@ -51,12 +51,12 @@ The proposal called Shim Layer is to implement functions Redfish would use and a
 ```ascii
 /openbmc/common
 └	recipes-shim
-    └	delta-gen: Process platform description files.
+    └	shim-gen: Process platform description files.
         └	bmc_sensor: Attribute definition of Sensor Objects
         └	config_parser: Parse Platform Descriptor and compose Redfish route table and responding handler.
         └	shim_list: Header of shim layer.
         └	device_item: Compose device items information
-    └	delta-lib: APIs.
+    └	shim-lib: APIs.
     └	redfish: Library mapped to Redfish routes.
     └	rest-api: Apply generated Redfish into original RESTful API design.
 ```
